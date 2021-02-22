@@ -1,10 +1,8 @@
-package v3main.weebly;
+package v3main.weebly.resources;
 
 import java.io.*;
-import java.net.*;
 import java.util.*;
 import java.math.*;
-import java.lang.*;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -14,21 +12,16 @@ import javax.ws.rs.*;
 
 import javax.crypto.*;
 import javax.crypto.spec.*;
-import javax.servlet.*;
 
-import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClientBuilder;
-import org.apache.http.util.EntityUtils;
-import org.apache.http.HttpRequest;
 
 import org.eclipse.microprofile.config.inject.ConfigProperty;
 
 import org.jboss.resteasy.annotations.jaxrs.QueryParam;
-import org.jboss.resteasy.annotations.jaxrs.PathParam;
 
 @Path("/weebly")
 public class OAuthResource {
